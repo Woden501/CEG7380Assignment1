@@ -20,6 +20,11 @@ public class Application {
 		}
 		
 		meanFinder.displayValues();
+		
+		System.out.println("Window size 3:");
+		meanFinder.displayMeans(3);
+		System.out.println("\nWindow size 4:");
+		meanFinder.displayMeans(4);
 	}
 
 }
