@@ -1,9 +1,9 @@
-package snedeker.cc.project1;
+package snedeker.cc.project1.single;
 
 import java.io.IOException;
 import java.text.ParseException;
 
-import snedeker.cc.project1.services.MeanFinder;
+import snedeker.cc.project1.single.services.MeanFinder;
 
 public class Application {
 
