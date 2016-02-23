@@ -10,21 +10,22 @@ public class Application {
 	private static MeanFinder meanFinder;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// Creating the MeanFinder Service
 		meanFinder = new MeanFinder();
 		
+		// Attempt to have the service read the values from the input file.
 		try {
-			meanFinder.run();
+			meanFinder.readValues();
 		} catch (IOException | ParseException e) {
 			System.out.println("Unable to run MeanFinder: " + e);
 		}
 		
-		meanFinder.displayValues();
-		
+		// Output the means for window sizes of both 3 and 4 to System.out
 		System.out.println("Window size 3:");
-		meanFinder.displayMeans(3);
+		meanFinder.calculateMeans(3);
 		System.out.println("\nWindow size 4:");
-		meanFinder.displayMeans(4);
+		meanFinder.calculateMeans(4);
 	}
 
 }
