@@ -122,9 +122,6 @@ public class MeanFinder {
 				
 				System.out.println(entry.getKey() + "," + date + "," + df.format(mean));
 			}
-			
-			
-//			System.out.println("Company: " + entry.getKey() + ", Mean Value: " + df.format(mean));
 		}
 	}
 }
