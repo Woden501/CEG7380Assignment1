@@ -39,7 +39,7 @@ public class MeanFinder {
 	 * @throws ParseException The addDateValue function through a ParseException.
 	 */
 	public void readValues() throws IOException, ParseException {
-		String text = FileUtils.readFileToString(new File(MeanFinder.class.getResource("/snedeker/cc/project1/resources/sample.txt").getPath()));
+		String text = FileUtils.readFileToString(new File(MeanFinder.class.getResource("/snedeker/cc/project1/single/resources/sample.txt").getPath()));
 		
 		String[] entries = text.split("\n");
 		for (String entry : entries) {
